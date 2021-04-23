@@ -15,5 +15,5 @@ int main()
                 colum = j;
             }
         }
-    printf("最大值为:%d\n坐标为:a[%d][%d]", max, row, colum);
+    printf("这二维数组的最大值:%d\n坐标:a[%d][%d]", max, row, colum);
 }
