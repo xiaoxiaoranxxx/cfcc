@@ -1,52 +1,13 @@
-# h1
-## h2
-### h3
-#### h4
-##### h23
-###### h6
+# 欢迎来到肖萧然的C仓库
 
-Header 1
+![xiaoxiaoran](https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4087057811,445331467&fm=26&gp=0.jpg)
+
+目录结构
 ========
-
-Header 2
---------
-
-![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)
-<p><a href="https://www.zybuluo.com/cmd/" title="title属性">Windows/Mac/Linux 全平台客户端</a></p>
-<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo" title="" /></p>
-
- `我是单行文本`
-
-
-  *字体倾斜*                >        <em>字体倾斜</em>
-  _字体倾斜_
-  **字体加粗**              >        <strong>字体加粗</strong>
-  __字体加粗__
-  ~~字体删除~~              >        <del>字体删除</del>
-
-  ! 符号与字体之间不要有空格
-
-
-  非代码示例：
-    ` ` `
-      $ sudo apt-get install vim-gnome
-    ` ` `
-
-``` javascript
-/**
-
-nth element in the fibonacci series.
-*/
-function fib(n) {
-var a = 1, b = 1;
-return a;
-}
-document.write(fib(10));
-```
-``` javascript
-var canvas = document.getElementById("canvas");
-var context = canvas.getContext("2d");
-```
-
-
-
++ cfcc
+  + xiaoxiaoran1
+    + 1.c   *纵向乘法表*
+    + 1.exe
+    + 2.c  *标准乘法表*
+    + 2.exe
+  + *README.md*
