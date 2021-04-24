@@ -4,7 +4,7 @@ int main()
 {
     int a1, a2, result, z_result;
     char sign;
-    printf("请输入等式:");
+    printf("Please enter the equation:");
     scanf("%d%c%d=%d", &a1, &sign, &a2, &result);
     if (sign == '+')
         z_result = a1 + a2;
@@ -20,5 +20,5 @@ int main()
     if (result == z_result)
         printf("\nperfect");
     else
-        printf("\nerror\n这正确的是:%d%c%d=%d", a1, sign, a2, z_result);
+        printf("\nerror\n This is correct:%d%c%d=%d", a1, sign, a2, z_result);
 }

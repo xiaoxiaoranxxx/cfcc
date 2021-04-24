@@ -15,5 +15,5 @@ int main()
                 colum = j;
             }
         }
-    printf("这二维数组的最大值:%d\n坐标:a[%d][%d]", max, row, colum);
+    printf("This maximum is :%d\nits coordinates:a[%d][%d]", max, row, colum);
 }
