@@ -2,7 +2,8 @@
 int main()
 {
     int a=1, num = 5, count = 1;
-    printf("è¯·è¾“å…¥è¦çŒœçš„æ•°å­—(1-10):");
+    printf("ÇëÊäÈëÒª²ÂµÄÊý×Ö(1-10):");
+    
     while (num)
     {
         scanf("%d", &a);
@@ -24,7 +25,7 @@ int main()
         }
         else
         {
-            printf("\nï¿½ï¿½??,??????????-->");
+            printf("\n????,??????????-->");
             count++;
             continue;
         }
