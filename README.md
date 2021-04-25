@@ -1,10 +1,5 @@
 # 欢迎来到肖萧然的C仓库
-<style>
-  img[alt="xiaoxiaoran"]{
-    width="100%";
-    height="100%";
-  }
-</style>
+
 
 <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4087057811,445331467&fm=26&gp=0.jpg" width="100%" height="100%">
 
