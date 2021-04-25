@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int number, a[4], i, count = 0;
+    int number, a[5], i, count = 0;
     printf("Please enter a number of no more than 5 digits:");
     scanf("%d",&number);
     a[4] = number / 10000;
