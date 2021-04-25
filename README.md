@@ -5,7 +5,7 @@
 
 目录结构
 ========
-+ cfcc
+CFCC
   + xiaoxiaoran1
     + 1.c   *纵向乘法表*
     + 1.exe
