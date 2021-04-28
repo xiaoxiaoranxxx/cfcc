@@ -14,7 +14,7 @@ int main()
     xiao_strcat(a1, a2);
     printf("\n%s", strcat(a1, a2));
 
-    i1 = xiao_strclen(a1);
+    i1 = strlen(a1);
     i2 = xiao_strclen(a1);
     printf("\n%d=%d\n", i1, i2);
 
