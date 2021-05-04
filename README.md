@@ -31,3 +31,5 @@ xiaoxiaoran2 &nbsp;&nbsp;*//null*
 
 <img src="https://file.piczhan.com/uploads/2016/1118/Wqz7AKKdjZOPVXcf.jpg?x-oss-process=style/w_870-h_auto" width="100%" height="100%" >
 
+
+*学习的课程来自于大学C程序设计,感谢四川轻化工大学我成长...*
