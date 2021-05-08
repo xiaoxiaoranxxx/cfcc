@@ -3,11 +3,10 @@
 
 <img src="https://ss1.baidu.com/6ON1bjeh1BF3odCf/it/u=1263785869,593703170&fm=15&gp=0.jpg" width="100%" height="100%">
 
-Directory Structure
+Directory Structure-->CFCC
 ========
->CFCC
 
-xiaoxiaoran1 &nbsp;&nbsp;*//经典程序*
+xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 =========
 + 1.c   *//纵向乘法表*
 + 2.c  *//标准乘法表*
@@ -24,13 +23,14 @@ xiaoxiaoran1 &nbsp;&nbsp;*//经典程序*
 + 13.c *//折半法找数*
 + 14.c *//递归汉诺*
   
-xiaoxiaoran2 &nbsp;&nbsp;*//null*
+xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ==========
 
++ 1.cpp *//hello world*
 
 
 
 <img src="https://file.piczhan.com/uploads/2016/1118/Wqz7AKKdjZOPVXcf.jpg?x-oss-process=style/w_870-h_auto" width="100%" height="100%" >
 
 
-*学习的课程来自于大学C程序设计,感谢四川轻化工大学我成长...*
+*学习的课程来自于C程序设计&c++编程入门指南,感谢四川轻化工大学我成长...*
