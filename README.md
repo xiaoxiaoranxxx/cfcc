@@ -25,6 +25,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
   + 12.c *//实现str算法*
   + 13.c *//折半法找数*
   + 14.c *//递归汉诺*
+  + 15.c *//选择法排序*
   
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ==========
