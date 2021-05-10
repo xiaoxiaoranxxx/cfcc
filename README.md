@@ -1,4 +1,4 @@
-# Welcome to Xiao Xiaoran C Code library
+# Welcome to Xiao Xiaoran C/C++ Code library
 
 
 <img src="https://ss1.baidu.com/6ON1bjeh1BF3odCf/it/u=1263785869,593703170&fm=15&gp=0.jpg" width="100%" height="100%">
@@ -37,4 +37,4 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 <img src="https://file.piczhan.com/uploads/2016/1118/Wqz7AKKdjZOPVXcf.jpg?x-oss-process=style/w_870-h_auto" width="100%" height="100%" >
 
 
-*学习的课程来自于C程序设计&c++编程入门指南,感谢四川轻化工大学我成长...*
+*学习的课程来自于C程序设计&C++编程入门指南,感谢四川轻化工大学我成长...*
