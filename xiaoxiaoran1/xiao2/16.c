@@ -1,16 +1,18 @@
 #include <stdio.h>
-void get_put()
+void fun(int *s)
 {
-    char ch;
-    ch = getchar();
-    if (ch != '\n')
-        get_put();
-    putchar(ch);
+    static int j = 0;
+    do
+    {
+        s[j] = s[j] + s[j + 1];
+    } while (++j < 2);
 }
-int main()
+main()
 {
-    get_put();
+    int k, a[10] = {1, 2, 3, 4, 5};
+    for (k = 1; k < 3; k++)
+        fun(a);
+    for (k = 0; k < 5; k++)
+        printf("%d", a[k]);
     printf("\n");
 }
-
-// 1234  ->  4321
