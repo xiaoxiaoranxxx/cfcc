@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int fun(int x)
+{
+    int p;
+    if (x == 0 || x == 1)
+        return (3);
+    p = x - fun(x - 2);
+    return p;
+}
+int main()
+{
+    printf("%d\n", fun(7));
+}
+
+// 7-f5 -> 2+f3 -> 2+3-f1(f1=3) -> 2
+
+
+#include <stdio.h>
+void get_put()
+{
+    char ch;
+    ch = getchar(); 
+    if (ch != '\n')
+        get_put();  //递归逆序
+    putchar(ch);
+}
+int main()
+{
+    get_put();
+    printf("\n");
+}
+
+// 1234  ->  4321
+

@@ -26,6 +26,8 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
   + 13.c *//折半法找数*
   + 14.c *//递归汉诺*
   + 15.c *//选择法排序*
+  + 16.c
+  + xiao.txt *//刷题思路*
   
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ==========
