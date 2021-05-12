@@ -27,6 +27,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
   + 14.c *//递归汉诺*
   + 15.c *//选择法排序*
   + 16.c *//局部变量的生存期*
+  + 17.c *//全局变量的作用域*
   + xiao.txt *//刷题思路*
   
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
