@@ -28,6 +28,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
   + 15.c *//选择法排序*
   + 16.c *//局部变量的生存期*
   + 17.c *//全局变量的作用域*
+  + 18.c *//神奇的 i++*
   + xiao.txt *//刷题思路*
   
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
