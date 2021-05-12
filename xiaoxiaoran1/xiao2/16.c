@@ -1,18 +1,16 @@
 #include <stdio.h>
-void fun(int *s)
+
+int main()
 {
-    static int j = 0;
-    do
-    {
-        s[j] = s[j] + s[j + 1];
-    } while (++j < 2);
+    int f(int);
+    f(3);
+    f(3);
 }
-main()
+
+int f(int a)
 {
-    int k, a[10] = {1, 2, 3, 4, 5};
-    for (k = 1; k < 3; k++)
-        fun(a);
-    for (k = 0; k < 5; k++)
-        printf("%d", a[k]);
-    printf("\n");
+    auto int b = 3;  //自动变量,调用时分配,结束即释放
+    static int c = 1; //静态变量,调用时分配,结束保留原值
+    printf("a+3-->%d\n", a + b);
+    printf("c-->%d\n", c++);
 }
