@@ -15,7 +15,7 @@ int main()
 
     i = 3;
     k = (++i) + (++i) + (++i);
-    printf("i=%d,k=%d\n", i, k);  //6,18=6
+    printf("i=%d,k=%d\n", i, k);  //6,18
 
     i = 3;
     l = (++i) + (++i) + (i++);
