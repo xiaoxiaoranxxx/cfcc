@@ -32,4 +32,15 @@ int main()
     i = 3;
     t = (++i) * (++i) * (i++);
     printf("i=%d,t=%d\n", i, t); //5,125
+
+    int i = 1, j = 2, k = 3;
+    if (i++ == 1 & (++j == 3 || k++ == 3))
+        printf("%d %d %d\n", i, j, k); //2 3 3
+
+    int a = 0, b = 1;
+    if (a++ == b)
+        printf("TRUE");
+    else
+        printf("FALSE");
+    printf("_OUT:a=%d,b=%d\n", a, b++); //FALSE_OUT:a=1,b=1
 }
