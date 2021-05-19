@@ -89,7 +89,7 @@ int Number_questions(int n)
 
 int main()
 {
-    int xiao, xiu, t;
+    int xiao, xiu;
     printf("Daily Issue,happy everyday\n");
     printf("Please enter the number of questions you want to do-->");
     scanf("%d", &xiao);
