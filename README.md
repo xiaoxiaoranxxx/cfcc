@@ -37,6 +37,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 + >xiao3
   + 21.c *//数组指针*
   + 22.c *//出题验证系统*
+  + 23.c *//二维数组指针*
   
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ==========
