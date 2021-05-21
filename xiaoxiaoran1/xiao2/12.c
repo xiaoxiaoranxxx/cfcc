@@ -6,21 +6,25 @@ int xiao_strclen(char x[]);
 void xiao_strcpy(char x[], char y[]);
 int xiao_strcmp(char x[], char y[]);
 
+void p_strcpy(char from[], char to[]);
+
 int main()
 {
     int i = 0, j = 0, i1, i2;
-    char a1[81] = {"xiaoxiaoran"}, a2[81] = {"zuixiu!"}, a3[81];
+    char a1[81] = {"xiaoxiaoran"}, a2[81] = {"zuixiu!"}, a3[81]={"xxxx999999999999"};
 
-    xiao_strcat(a1, a2);
-    printf("\n%s", strcat(a1, a2));
+    xiao_strcat(a1, a2);  //xiaoxiaoranzuixiu!
+    printf("\n%s", strcat(a1, a2)); //xiaoxiaoranzuixiu!zuixiu!
 
     i1 = strlen(a1);
     i2 = xiao_strclen(a1);
-    printf("\n%d=%d\n", i1, i2);
+    printf("\n%d=%d\n", i1, i2); //25=25
 
-    strcpy(a2, "xxx");
-    xiao_strcpy(a2, "xxx");
-    puts(a2);
+    //strcpy(a2, "xxx");
+    //xiao_strcpy(a2, "xxx66666666");
+
+    p_strcpy(a2, a3);
+    puts(a3); //zuixiu!
 
     i = strcmp(a1, a2);
     i = xiao_strcmp(a1, a2);
@@ -74,4 +78,13 @@ void xiao_strcpy(char x[], char y[])
     }
     for (i = 0; i < strlen(y); i++)
         x[i] = y[i];
+}
+
+void p_strcpy(char from[], char to[])
+{
+    char *p1 , *p2 ;
+    p1 = from;
+    p2 = to;
+    while ((*p2++ = *p1++) != '\0')
+        ;
 }
