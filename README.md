@@ -47,6 +47,7 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
   + 2.cpp *//goto跳转*
   + 3.cpp *//可变参数*
   + 4.cpp *//重载函数*
+  + 5.cpp *//面向对象*
 + >xiao2
 
 
