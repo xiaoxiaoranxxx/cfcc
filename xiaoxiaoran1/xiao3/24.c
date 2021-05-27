@@ -62,12 +62,12 @@ void Pointer_array(char *name[], int n)
 //多重指针
 void Multiple_pointer()
 {
-    // int a[2] = {1, 2};
-    // int *num[2] = {&a[0], &a[1]};
-    // int **P , i;
-    // p = num[0];  //报错 未定义p
-    // for (i = 0; i < 2; i++,p++)
-    //     printf("%d ", **p);
+    int a[2] = {1, 2};
+    int *num[2] = {&a[0], &a[1]};
+    int **xiao , i;
+    xiao = num;  
+    for (i = 0; i < 2; i++,xiao++)
+        printf("%d ", **xiao);
 }
 
 int main()
@@ -76,15 +76,15 @@ int main()
 
     int a;
 
-    //a = Pointer_to_function_parameters(1, 2, max);  //2
+    a = Pointer_to_function_parameters(1, 2, max);  //2
 
-    // float score[][4] = {{1, 1, 1, 1}, {2, 2, 2, 2}, {3, 3, 3, 3}};
-    // float *p = Return_pointer(score, 0);
-    // for (int i = 0; i < 4;i++)
-    //     printf("%f ", *(p + i));
+    float score[][4] = {{1, 1, 1, 1}, {2, 2, 2, 2}, {3, 3, 3, 3}};
+    float *p = Return_pointer(score, 0);
+    for (int i = 0; i < 4;i++)
+        printf("%f ", *(p + i));
 
-    // char *name[] = {"aaaa", "ssss", "ddddd", "fffffff", "ggggg"};
-    // Pointer_array(name, 5);
+    char *name[] = {"aaaa", "ssss", "ddddd", "fffffff", "ggggg"};
+    Pointer_array(name, 5);
 
     Multiple_pointer();
 }
