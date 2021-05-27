@@ -55,4 +55,4 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 <img src="https://file.piczhan.com/uploads/2016/1118/Wqz7AKKdjZOPVXcf.jpg?x-oss-process=style/w_870-h_auto" width="100%" height="100%" >
 
 
-*学习的课程来自于C程序设计&C++编程入门指南,感谢四川轻化工大学让我成长...*
+*学习的课程来自于关永洪的C程序设计&C++编程入门指南,感谢关永洪老师让我成长...*
