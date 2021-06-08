@@ -48,6 +48,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 + >xiao4
   + 31.c *//共用体*
   + 32.c *//文件的打开与关闭*
+  + 33.c *//文件的读和写*
   
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ==========
