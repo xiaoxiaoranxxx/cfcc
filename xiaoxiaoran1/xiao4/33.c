@@ -7,13 +7,13 @@ char *write()
     char filename[10];
     printf("input a filename-->");
     scanf("%s", filename);
-    getchar();  //不写会导致生成文件有换行
+    getchar(); //不写会导致生成文件有换行
     if ((fp = fopen(filename, "a")) == NULL)
         return 0;
     p = filename;
     char ch;
     printf("please this file content-->");
-    ch=getchar();
+    ch = getchar();
     while (ch != '#')
     {
         fputc(ch, fp);
@@ -25,12 +25,13 @@ char *write()
 int read(char name[])
 {
     FILE *fp;
-    int i=0;
+    int i = 0;
     char str[20][20];
     if ((fp = fopen(name, "r")) == NULL)
         return 1;
     printf("\nThe content of this file is:\n");
-    while(fgets(str[i],20,fp)!=NULL){
+    while (fgets(str[i], 20, fp) != NULL)
+    {
         printf("%s", str[i]);
         i++;
     }
@@ -48,7 +49,7 @@ int main()
         exit(0);
     }
     char xiao[10] = {"33.txt"};
-    if(read(xiao))
+    if (read(xiao))
         printf("false");
     return 0;
 }
