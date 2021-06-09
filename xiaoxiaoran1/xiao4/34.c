@@ -35,19 +35,19 @@ int main()
         em_case[i].salary = em[i].salary;
     }
     printf("\n\n  ********************************      ");
-    // if ((fp2 = fopen("emp_salary", "wb")) == NULL)
-    // {
-    //     printf("can not open file\n");
-    //     exit(0);
-    // }
-    // for (j = 0; j < i; j++)
-    // {
-    //     if (fwrite(&em_case[j], sizeof(struct emp), 1, fp2) != 1)
-    //         printf("error!");
-    //     printf("\n  %12s%10d", em_case[j].name, em_case[j].salary);
-    // }
-    // printf("\n   *******************************     ");
+    if ((fp2 = fopen("emp_salary", "wb")) == NULL)
+    {
+        printf("can not open file\n");
+        exit(0);
+    }
+    for (j = 0; j < i; j++)
+    {
+        if (fwrite(&em_case[j], sizeof(struct emp), 1, fp2) != 1)
+            printf("error!");
+        printf("\n  %12s%10d", em_case[j].name, em_case[j].salary);
+    }
+    printf("\n   *******************************     ");
     fclose(fp1);
-    //fclose(fp2);
+    fclose(fp2);
     return 0;
 }
