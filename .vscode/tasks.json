@@ -12,8 +12,9 @@
                 "\"${file}\"",
                 "-o",
                 "\"${fileDirname}\\${fileBasenameNoExtension}.exe\"",
-                "-finput-charset=UTF-8",//输入编译器文本编码 默认为UTF-8
-                "-fexec-charset=UTF-8"//编译器输出文本编码 自行选择
+
+                "-finput-charset=UTF-8", //输入编译器文本编码 默认为UTF-8
+                "-fexec-charset=UTF-8"  //编译器输出文本编码 自行选择
                 
                 // 设置编译后的可执行文件的字符集为 GB2312：
                 // "-fexec-charset", "UTF-8"
