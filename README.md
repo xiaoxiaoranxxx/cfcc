@@ -57,13 +57,13 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
   
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ==========
-+ >xiao1
++ >xiao0
   + 1.cpp *//hello world*
   + 2.cpp *//goto跳转*
   + 3.cpp *//可变参数*
   + 4.cpp *//重载函数*
   + 5.cpp *//面向对象*
-+ >xiao2
++ >xiao1
   
 
 
