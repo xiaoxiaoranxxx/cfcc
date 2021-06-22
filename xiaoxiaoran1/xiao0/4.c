@@ -13,12 +13,17 @@ int main()
     else if (sign == '*')
         z_result = a1 * a2;
     else if (sign == '/')
-        z_result = a1 / a2;
+    {
+        if (a2 == 0)
+            printf("false");
+        else
+            z_result = a1 / a2;
+    }
     else if (sign == '%')
         z_result = a1 % a2;
 
     if (result == z_result)
         printf("\nperfect");
     else
-        printf("\nerror\n This is correct:%d%c%d=%d", a1, sign, a2, z_result);
+        printf("\nerror\nThis is correct:%d%c%d=%d", a1, sign, a2, z_result);
 }
