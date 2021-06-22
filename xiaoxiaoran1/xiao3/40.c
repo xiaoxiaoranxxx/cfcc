@@ -1,17 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-
-int *f(int *s, int *t)
+typedef struct
 {
-    if (*s < *t)
-        s = t;
-    return s;
+    char name[9];
+    char sex;
+    int score[2];
+} STU;
+STU f(STU a)
+{
+    STU b = {"Zhao", 'm', 85, 90};
+    int i;
+    strcpy(a.name, b.name);
+    a.sex = b.sex;
+    for (i = 0; i < 2; i++)
+        a.score[i] = b.score[i];
+    return a;
 }
-main()
+int main()
 {
-    int N = 10;
-    int x[N];
-    int i = 3, j = 5, *p = &i, *q = &j, *r;
-    r = f(p, q);
-    printf("%d,%d,%d,%d,%d\n", i, j, *p, *q, *r);
+    STU c = {"Qian", 'f', 95, 92}, d;
+    d = f(c);//b
+    printf("%s,%c,%d,%d,", d.name, d.sex, d.score[0], d.score[1]);
+    printf("%s,%c,%d,%d\n", c.name, c.sex, c.score[0], c.score[1]);
 }
