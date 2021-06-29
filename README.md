@@ -1,6 +1,6 @@
 ![xiao](https://img-blog.csdnimg.cn/20210518211707779.png#pic_center)
 
-# Welcome to Xiao Xiaoran C/C++ Code library
+# Welcome to Xiao Xiaoran's C/C++ Code library
 
 <img src="https://ss1.baidu.com/6ON1bjeh1BF3odCf/it/u=1263785869,593703170&fm=15&gp=0.jpg" width="100%" height="100%">
 
@@ -68,6 +68,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 
   + 41.c*//结构体传数组值*
   + 42.c*//结构体的各种赋值*
+  + 43.c*//结构体函数*
 
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ======================================
