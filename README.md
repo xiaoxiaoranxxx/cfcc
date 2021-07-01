@@ -73,6 +73,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 + 46.c&nbsp;*//结构体函数*
 + 47.c&nbsp;*//二维数组转一维*
 + 48.c&nbsp;*//if(1?i>j:i<j)*
++ 49.c&nbsp;*//冒泡排序的运用*
   
 
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
