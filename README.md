@@ -72,7 +72,7 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 + 45.c&nbsp;*//学生信息管理系统*
 + 46.c&nbsp;*//结构体函数*
 + 47.c&nbsp;*//二维数组转一维*
-+ 48.c&nbsp;*//if(1?i>j:i<j>)*
++ 48.c&nbsp;*//if(1?i>j:i<j)*
   
 
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
