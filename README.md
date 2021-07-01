@@ -8,7 +8,7 @@ Directory Structure-->CFCC
 ==========================
 
 xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
-=====================================
+====================================
 
 ## xiao0
 
@@ -70,9 +70,12 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 + 43.c&nbsp;*//结构体函数*
 + 44.c&nbsp;*//结构体二维数组*
 + 45.c&nbsp;*//学生信息管理系统*
++ 46.c&nbsp;*//结构体例题*
++ 47.c&nbsp;*//结构体例题*
+  
 
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
-=======================================
+======================================
 
 ## xiao0
 
@@ -84,9 +87,8 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 
 ## xiao1
 
+<img  src="https://userblink.csdnimg.cn/20210629/qq_52549196/pic/05521478c6bad80bfb2d2af94e6f21d1-0.png?x-oss-process=image/watermark,image_bG9nby9jc2RuM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjg=,text_QOiCluiQp-eEtg==,color_FFFFFF,size_30,shadow_100,t_100,g_se,order_0,align_2,interval_4"  width="100%" height="100%" >
 
-<img  src="https://file.piczhan.com/uploads/2016/1118/Wqz7AKKdjZOPVXcf.jpg?x-oss-process=style/w_870-h_auto"  width="100%" height="100%" >
-
-*xiaoxiaoran学习的课程来自于*<br>
-*-->关永洪老师的C程序设计*<br>
-*-->C++编程入门指南*<br>
+*xiaoxiaoran学习的课程来自于*`<br>`
+*-->关永洪老师的C程序设计*`<br>`
+*-->C++编程入门指南*`<br>`
