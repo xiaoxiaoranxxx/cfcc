@@ -70,8 +70,8 @@ xiaoxiaoran1 &nbsp;&nbsp;*//c经典程序*
 + 43.c&nbsp;*//结构体函数*
 + 44.c&nbsp;*//结构体二维数组*
 + 45.c&nbsp;*//学生信息管理系统*
-+ 46.c&nbsp;*//结构体例题*
-+ 47.c&nbsp;*//结构体例题*
++ 46.c&nbsp;*//结构体函数*
++ 47.c&nbsp;*//二维数组转一维*
   
 
 xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
