@@ -24,7 +24,7 @@
 
 int xiao(char x)
 {
-    if (x >= 'A' && x <= 'Z')
+    if (x >= 'A' && x <= 'N')
         return 1;
     else if (x >= '0' && x <= '9')
         return 1;
