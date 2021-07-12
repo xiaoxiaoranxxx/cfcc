@@ -96,7 +96,14 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 12.cpp&nbsp;*//有序插入*
 + 13.cpp&nbsp;*//数组元素逆置*
 + 14.cpp&nbsp;*//杨辉三角*
-+ 15.cpp&nbsp;*// *
++ 15.cpp&nbsp;*//解密*
++ 16.cpp&nbsp;*//比较两个字符串大小*
++ 17.cpp&nbsp;*//冒泡排序*
++ 18.cpp&nbsp;*//矩阵转置*
++ 19.cpp&nbsp;*//字符串求最大值*
++ 20.cpp&nbsp;*//复制字符串中的元音字母*
+## xiao2
++ 21.cpp&nbsp;*//计算若干整数的和*
 
   
 
