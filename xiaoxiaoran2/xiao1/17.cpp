@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int i, j, temp;
-    char x[10];
+    int x[10];
     for (i = 0; i < 10; i++)
         cin >> x[i];
 
