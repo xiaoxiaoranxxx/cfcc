@@ -81,12 +81,24 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 ======================================
 
 ## xiao0
-
 + 1.cpp&nbsp;*//hello world*
 + 2.cpp&nbsp;*//goto跳转*
 + 3.cpp&nbsp;*//可变参数*
 + 4.cpp&nbsp;*//重载函数*
 + 5.cpp&nbsp;*//面向对象*
++ 6.cpp&nbsp;*//std*
++ 7.cpp&nbsp;*//一元二次方程求根*
++ 8.cpp&nbsp;*//求利润*
++ 9.cpp&nbsp;*//求圆周率pi的近似值*
++ 10.cpp&nbsp;*//Fibonacci数列*
+## xiao1
++ 11.cpp&nbsp;*//分数序列求和*
++ 12.cpp&nbsp;*//有序插入*
++ 13.cpp&nbsp;*//数组元素逆置*
++ 14.cpp&nbsp;*//杨辉三角*
++ 15.cpp&nbsp;*// *
+
+  
 
 
 
