@@ -12,7 +12,7 @@ int main()
 {
 
     int a, b, num = 1, sum = 0, i,N;
-    int x[10];
+    int x[100];
     cin >> N;
     while (N--)
     {
