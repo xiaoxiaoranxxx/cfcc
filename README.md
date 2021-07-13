@@ -106,6 +106,7 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 21.cpp&nbsp;*//计算若干整数的和*
 + 22.cpp&nbsp;*//神奇的c++stl库函数*
 + 23.cpp&nbsp;*//最大最小数*
++ 24.cpp&nbsp;*//全排列*
 
   
 
