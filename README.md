@@ -107,6 +107,7 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 22.cpp&nbsp;*//神奇的c++stl库函数*
 + 23.cpp&nbsp;*//最大最小数*
 + 24.cpp&nbsp;*//全排列*
++ 25.cpp&nbsp;*//数组逆置输出*
 
   
 
