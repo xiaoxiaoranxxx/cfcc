@@ -108,7 +108,19 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 23.cpp&nbsp;*//最大最小数*
 + 24.cpp&nbsp;*//全排列*
 + 25.cpp&nbsp;*//数组逆置输出*
-
++ 26.cpp&nbsp;*//set（集合）*
++ 27.cpp&nbsp;*//vector(不定长数组）*
++ 28.cpp&nbsp;*//map（映射）*
++ 29.cpp&nbsp;*//结构体swap*
++ 30.cpp&nbsp;*//结构体sort*
+## xiao3
++ 31.cpp&nbsp;*//计算两日期间隔*
++ 32.cpp&nbsp;*//加密4个数*
++ 33.cpp&nbsp;*//计算日期星期*
++ 34.cpp&nbsp;*//queue（队列）*
++ 35.cpp&nbsp;*//stack（栈）*
++ 36.cpp&nbsp;*//sort*
++ 37.cpp&nbsp;*//结构体sort*
   
 
 
