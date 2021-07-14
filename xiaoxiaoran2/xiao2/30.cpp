@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-
+/*给出班里某门课程的成绩单，请你按成绩从高到低对成绩单排序输出，如果有相同分数则名字字典序小的在前。*/
 struct student
 {
     char name[21];
@@ -26,3 +26,10 @@ int main()
         cout << s[i].name << " " << s[i].score << endl;
     return 0;
 }
+/*
+4
+Kitty 80
+Hanmeimei 90
+Joey 92
+Tim 28
+*/
