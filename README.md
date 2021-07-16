@@ -121,6 +121,12 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 35.cpp&nbsp;*//stack（栈）*
 + 36.cpp&nbsp;*//sort*
 + 37.cpp&nbsp;*//结构体sort*
++ 38.cpp&nbsp;*//奶牛日光浴*
++ 39.cpp&nbsp;*//lower_bound*
++ 40.cpp&nbsp;*//贪心看电视*
++ 41.cpp&nbsp;*//两边同时减*
++ 42.cpp&nbsp;*//贪心安排会场*
++ 43.cpp&nbsp;*//iterator*
   
 
 
@@ -139,3 +145,4 @@ xiaoxiaoran3 &nbsp;&nbsp;*//数据结构与算法*
 *xiaoxiaoran学习的课程来自于*<br>
 *-->关永洪老师的C程序设计*<br>
 *-->C++编程入门指南*<br>
+*-->何海涛老师暑假算法培训*<br>
