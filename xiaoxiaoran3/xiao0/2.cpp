@@ -6,8 +6,13 @@
     输出
         以空格分隔的从大到小排序的数字 。
 */
-#include <stdio.h>
-#include <math.h>
+#include <bits/stdc++.h>
+#include <string>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 int ssum(int x)
 {
     int sum = 0;
@@ -41,7 +46,7 @@ int main()
 
     N = 12;
     int num[N];
-    scanf("%d", &N);
+    cin >> N;
     for (i = 0; i < N; i++)
         scanf("%d", &num[i]);
     for (i = 0; i < N; i++)

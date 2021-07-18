@@ -8,13 +8,9 @@ ASCII码排序
         对于每组输入数据，输出一行，字符中间用一个空格分开。
 */
 #include <stdio.h>
-void sort(char *x, char *y)
-{
-    char t;
-    t = *x;
-    *x = *y;
-    *y = t;
-}
+#include <bits/stdc++.h>
+#include <algorithm>
+using namespace std;
 int main()
 {
     int i, j;
@@ -25,10 +21,11 @@ int main()
         for (j = 0; j < 2; j++)
         {
             if (x[i][j] > x[i][j + 1])
-                sort(&x[i][j], &x[i][j + 1]);
+                swap(x[i][j], x[i][j + 1]);
             if (x[i][0] > x[i][2])
-                sort(&x[i][0], &x[i][2]);
+                swap(x[i][0], x[i][2]);
         }
+
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
@@ -36,3 +33,12 @@ int main()
         printf("\n");
     }
 }
+
+/*
+qwe
+wer
+tyu
+e q w
+e r w
+t u y
+*/
