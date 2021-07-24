@@ -127,7 +127,19 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 41.cpp&nbsp;*//两边同时减*
 + 42.cpp&nbsp;*//贪心安排会场*
 + 43.cpp&nbsp;*//iterator*
-  
++ 44.cpp&nbsp;*//背包问题*
++ 45.cpp&nbsp;*//取数排列*
++ 46.cpp&nbsp;*//全排列*
++ 47.cpp&nbsp;*//节点*
++ 48.cpp&nbsp;*//节点*
++ 49.cpp&nbsp;*//村庄修公路*
++ 50.cpp&nbsp;*//差分数组*
+## xiao4
++ 51.cpp&nbsp;*//最大子段和*
++ 52.cpp&nbsp;*//map应用*
++ 53.cpp&nbsp;*//ASCII码排序*
++ 54.cpp&nbsp;*//我的排序*
++ 55.cpp&nbsp;*//隐藏的时间*
 
 
 xiaoxiaoran3 &nbsp;&nbsp;*//数据结构与算法*
@@ -135,9 +147,7 @@ xiaoxiaoran3 &nbsp;&nbsp;*//数据结构与算法*
 
 ## xiao0
 
-+ 1.c&nbsp;*//ASCII码排序*
-+ 2.c&nbsp;*//我的排序*
-+ 3.c&nbsp;*//隐藏的时间*
+
 
 
 <img  src="https://userblink.csdnimg.cn/20210629/qq_52549196/pic/05521478c6bad80bfb2d2af94e6f21d1-0.png?x-oss-process=image/watermark,image_bG9nby9jc2RuM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjg=,text_QOiCluiQp-eEtg==,color_FFFFFF,size_30,shadow_100,t_100,g_se,order_0,align_2,interval_4"  width="100%" height="100%" >
