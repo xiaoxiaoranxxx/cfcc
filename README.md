@@ -141,6 +141,9 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 54.cpp&nbsp;*//我的排序*
 + 55.cpp&nbsp;*//隐藏的时间*
 + 56.cpp&nbsp;*//好年份*
++ 57.cpp&nbsp;*//最大最小值*
++ 58.cpp&nbsp;*//两数的和*
+  
 
 
 xiaoxiaoran3 &nbsp;&nbsp;*//数据结构与算法*
