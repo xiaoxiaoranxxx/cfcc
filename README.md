@@ -124,6 +124,7 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 38.cpp&nbsp;*//奶牛日光浴*
 + 39.cpp&nbsp;*//lower_bound*
 + 40.cpp&nbsp;*//贪心看电视*
+## xiao4
 + 41.cpp&nbsp;*//两边同时减*
 + 42.cpp&nbsp;*//贪心安排会场*
 + 43.cpp&nbsp;*//iterator*
@@ -134,7 +135,7 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 48.cpp&nbsp;*//节点*
 + 49.cpp&nbsp;*//村庄修公路*
 + 50.cpp&nbsp;*//差分数组*
-## xiao4
+## xiao5
 + 51.cpp&nbsp;*//最大子段和*
 + 52.cpp&nbsp;*//map应用*
 + 53.cpp&nbsp;*//ASCII码排序*
@@ -142,8 +143,14 @@ xiaoxiaoran2 &nbsp;&nbsp;*//c++经典程序*
 + 55.cpp&nbsp;*//隐藏的时间*
 + 56.cpp&nbsp;*//好年份*
 + 57.cpp&nbsp;*//最大最小值*
-+ 58.cpp&nbsp;*//两数的和*
-  
++ 58.cpp&nbsp;*//由两天推日期*
++ 59.cpp&nbsp;*//目标和*
++ 60.cpp&nbsp;*//统计字符*
+## xiao6
++ 61.cpp&nbsp;*//计算天数*
++ 62.cpp&nbsp;*//统计单词*
+
+
 
 
 xiaoxiaoran3 &nbsp;&nbsp;*//数据结构与算法*

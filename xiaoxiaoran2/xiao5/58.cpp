@@ -1,29 +1,21 @@
 #include <iostream>
 #include <bits/stdc++.h>
+/*小明只知道现在是多少年,今年过了多少天,请你帮小明计算出现在的日期.*/
 using namespace std;
-void MonthDay(int year, int yearDay, int *pMonth, int *pDay)
-{
-    int days[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //这个数组保存每月的天数
-    if ((year % 4 == 0 && year % 100 != 0 )|| year % 400 == 0)         //判断是否为闰年
-        days[1] = 29;                                                //闰年的二月有29天
-    *pMonth = 1;                                                     //从一月开始看
-    while (yearDay > days[*pMonth - 1])                              //如果哪一天超出这个月
-    {
-        yearDay -= days[*pMonth - 1]; //求出超出此月的天数
-        (*pMonth)++;                  //继续考虑下一月
-    }
-    *pDay = yearDay;
-}
-
+int g[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int n, m;
 int main()
 {
-    int year, yearDay, month, day;
-    while (cin >> year >> yearDay)
+    while (cin >> n >> m)
     {
-        MonthDay(year, yearDay, &month, &day);
-        printf("%d-%02d-%02d\n", year, month, day);
+        if (n % 400 == 0 || (n % 4 == 0 && n % 100 != 0))
+            g[2] = 29;
+     
+        int _1(1), _2(m);
+        while (_2 > g[_1])
+            _2 -= g[_1], _1++;
+        printf("%04d-%02d-%02d\n", n, _1, _2);
     }
-    return 0;
 }
 /*
 2000 3
