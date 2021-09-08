@@ -2,37 +2,24 @@
 #include <bits/stdc++.h>
 /*小明有一个数组A,有n个不重复的元素,他想知道对于每一个位置的元素 x   在x i​ 之后值大于 x i  的值中的最小值*/
 using namespace std;
-
+const int N = 1e6 + 111;
+int n, g[N];
+set<int> st;
 int main()
 {
-    int a[10000];
-    int index, min, i, j, num;
-    cin >> num;
-    for (i = 0; i < num; i++)
-        scanf("%d", &a[i]);
-    for (i = 0; i < num; i++)
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+        cin >> g[i], st.insert(g[i]);
+    for (int i = 1; i <= n; i++)
     {
-        min = a[i];
-        for (j = i; j < num; j++)
-        {
-            if (a[j] > a[i])
-            {
-                min = a[j];
-                break;
-            }
-        }
-        for (j = i; j < num; j++)
-        {
-            if (a[j] > a[i] && a[j] < min)
-                min = a[j];
-        }
-        if (a[i] == min)
-            cout << -1 << " ";
+        auto t = st.lower_bound(g[i]);
+        if (++t == st.end())
+            cout << -1 << " ", st.erase(--t);
         else
-            cout << min << " ";
+            cout << *(t) << " ", st.erase(--t);
     }
+    return 0;
 }
-
 /*
 case 1
 5
