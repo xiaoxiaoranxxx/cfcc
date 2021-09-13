@@ -14,7 +14,7 @@ typedef struct lnode
     struct lnode *next;
 } lnode, *linklist;
 
-status creatlink1(linklist &L, int n, elemtype *e) //从表头插入
+status creatlink(linklist &L, int n, elemtype *e) //从表头插入
 {
     int i;
     linklist p;
@@ -33,7 +33,8 @@ status creatlink1(linklist &L, int n, elemtype *e) //从表头插入
     return ok;
 }
 
-void printlink1(linklist L){
+void printlink(linklist L)
+{
     linklist p = L->next;
     while (p)
     {
@@ -43,16 +44,81 @@ void printlink1(linklist L){
     printf("end\n");
 }
 
+status insertlink(linklist &L, int i, elemtype e)
+{
+    linklist s, p = L;
+    int k = 0;
+    while (p->next != NULL && k < i - 1)
+    {
+        p = p->next;
+        ++k;
+    }
+    if (!p->next || k > i - 1)
+        return error;
+    if (!(s = (linklist)malloc(sizeof(lnode))))
+        return overflow;
+    s->data = e;
+    s->next = p->next;
+    p->next = s;
+    return ok;
+}
+
+status dellink(linklist L, int i, elemtype &e)
+{
+    int k;
+    linklist q, p = L;
+    while (p->next != NULL && k < i - 1)
+    {
+        p = p->next;
+        k++;
+    }
+    if (!p->next || k > i - 1)
+        return error;
+    q = p->next;
+    p->next = q->next;
+    e = q->data;
+    free(q);
+    return ok;
+}
+
+void freelink(linklist &L)
+{
+    linklist p, q;
+    p = L;
+    while (p != NULL)
+    {
+        p = L->next;
+        q = p->next;
+        free(q);
+    }
+    L = NULL;
+}
 int main()
 {
-    elemtype e[]={1,22,339,44,55,66,332,188,2333};
+    elemtype e[] = {1, 22, 339, 44, 55, 66, 332, 188, 2333};
     int i, n = 9;
     linklist head;
     elemtype rc;
 
-    if(!creatlink1(head,n,e))  //创建链表
+    if (!creatlink(head, n, e)) //创建链表
         return error;
-    printlink1(head);
+    printlink(head);
 
-    printf("xiaoxiaoran");
+    // printf("index value-->");
+    // scanf("%d%d", &i, &rc);
+    i = 2, rc = 9999;
+    if (!insertlink(head, i, rc)) //插入
+        return error;
+    printlink(head);
+
+    // printf("index value-->");
+    // scanf("%d%d", &i, &rc);
+    i = 2, rc = 9999;
+    if (!dellink(head, i, rc)) //删除
+        return error;
+    printlink(head);
+
+    freelink(head); //释放链表
+    if (head)
+        printf("xiaoxiaoran");
 }
