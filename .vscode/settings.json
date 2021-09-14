@@ -1,0 +1,7 @@
+{
+    "C_Cpp.default.compilerPath": "c:\\Users\\Administrator\\.vscode\\extensions\\bartmanabyss.amiga-debug-1.0.0\\bin\\opt\\bin\\m68k-amiga-elf-gcc.exe",
+    "code-runner.executorMap": {
+         "c": "cd $dir && gcc -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+         "cpp": "cd $dir && g++ -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    }
+}
