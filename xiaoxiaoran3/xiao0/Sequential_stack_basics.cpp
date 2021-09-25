@@ -38,7 +38,7 @@ status push(sqstack &S, selemtype e)
     *S.top++ = e;
     return ok;
 }
-status pop(sqstack &S, selemtype e)
+status pop(sqstack &S, selemtype &e)
 {
     if (S.top == S.base)
         return error;
@@ -51,6 +51,7 @@ status stackempty(sqstack S)
         return true;
     return false;
 }
+
 void convesion(int num, int Y) //进制转换
 {
     sqstack S;
@@ -65,7 +66,7 @@ void convesion(int num, int Y) //进制转换
             x = result + '0';
         else
             x = result - 10 + 'A';
-      
+
         push(S, x);
         num = num / Y;
     }
@@ -74,16 +75,17 @@ void convesion(int num, int Y) //进制转换
     while (!stackempty(S))
     {
         pop(S, e);
-        printf("%c", e+'1');
+        printf("%c", e);
     }
 
-    //printf("%d", num);
+    printf("\n");
 }
 int main(int argc, char const *argv[])
 {
-    int number = 11;
+    int number = 15;
+    convesion(number, 16);
     convesion(number, 2);
+    convesion(number, 8);
 
-    //    printf("xiaoxiaoran");
     return 0;
 }
