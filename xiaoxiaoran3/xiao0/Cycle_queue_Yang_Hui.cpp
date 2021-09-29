@@ -48,21 +48,48 @@ status outputqueue(sqqueue Q)
     return ok;
 }
 
-int main(int argc, char const *argv[])
+void out_YangHui_number(int n)
 {
     sqqueue Q;
     initqueue(Q);
-
     qelemtype x;
 
-    for (int i = 0; i < 5; i++)
+    int s1 = 0, s2 = 1, i, j;
+    printf("1\n");
+    enquene(Q, s1 + s2);
+    for (i = 2; i <= n; i++)
     {
-        x = i * 8;
-        enquene(Q, x);
+        s1 = 0;
+        for (j = 1; j <= i - 1; j++)
+        {
+            dequene(Q, x);
+            s2 = x;
+            printf("%d ", s2);
+            enquene(Q, s1 + s2);
+            s1 = s2;
+        }
+        printf("1");
+        enquene(Q, 1 + s2);
+        printf("\n");
     }
-    outputqueue(Q);
-    dequene(Q, x);
-    outputqueue(Q);
+}
 
+int main(int argc, char const *argv[])
+{
+    // 队列功能测试
+    // sqqueue Q;
+    // initqueue(Q);
+    // qelemtype x;
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     x = i * 8;
+    //     enquene(Q, x);
+    // }
+    // outputqueue(Q);
+    // dequene(Q, x);
+    // outputqueue(Q);
+
+    out_YangHui_number(8);
+    
     return 0;
 }
