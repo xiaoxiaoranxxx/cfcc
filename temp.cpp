@@ -1,207 +1,111 @@
-#include "string.h"
-#include "stdio.h"
-#include "stdlib.h"
+/* 根据Huffman编码的原理，编写一个程序，在用户输入节点权重的基础上建立他的Huffman编码 */
 
-#include "math.h"
-#include "time.h"
+//解题思路：先构造一棵Huffman树，由此得到的二进制前缀便为Huffman
+//由于Huffman树没有度为1的节点，则一棵有着n个节点的Huffman树共有2n-1个节点，设计一个结构数组，存储2n-1个节点的值
+//包括权重，父节点、左节点、右节点等
 
-#define OK 1
-#define ERROR 0
-#define TRUE 1
-#define FALSE 0
-
-#define MAXSIZE 100 /* 存储空间初始分配量 */
-
-typedef int Status; /* Status是函数的类型,其值是函数结果状态代码，如OK等 */
-
-/* 用于构造二叉树********************************** */
-int treeIndex = 1;
-typedef char String[24]; /*  0号单元存放串的长度 */
-String str;
-
-Status StrAssign(String T, char *chars)
+#include <iostream>
+using namespace std;
+#define MAX 21
+typedef struct
 {
-    int i;
-    if (strlen(chars) > MAXSIZE)
-        return ERROR;
-    else
-    {
-        T[0] = strlen(chars);
-        for (i = 1; i <= T[0]; i++)
-            T[i] = *(chars + i - 1);
-        return OK;
-    }
-}
-/* ************************************************ */
+    char data;  //节点值
+    int weight; //权重
+    int parent; //父节点下标位置
+    int left;   //左节点
+    int right;  //右节点
+} huffnode;
 
-typedef char TElemType;
-TElemType Nil = ' '; /* 字符型以空格符为空 */
-
-Status visit(TElemType e)
+typedef struct
 {
-    printf("%c ", e);
-    return OK;
-}
-
-typedef struct BiTNode /* 结点结构 */
-{
-    TElemType data;                  /* 结点数据 */
-    struct BiTNode *lchild, *rchild; /* 左右孩子指针 */
-} BiTNode, *BiTree;
-
-/* 构造空二叉树T */
-Status InitBiTree(BiTree *T)
-{
-    *T = NULL;
-    return OK;
-}
-
-/* 初始条件: 二叉树T存在。操作结果: 销毁二叉树T */
-void DestroyBiTree(BiTree *T)
-{
-    if (*T)
-    {
-        if ((*T)->lchild)                 /* 有左孩子 */
-            DestroyBiTree(&(*T)->lchild); /* 销毁左孩子子树 */
-        if ((*T)->rchild)                 /* 有右孩子 */
-            DestroyBiTree(&(*T)->rchild); /* 销毁右孩子子树 */
-        free(*T);                         /* 释放根结点 */
-        *T = NULL;                        /* 空指针赋0 */
-    }
-}
-
-/* 按前序输入二叉树中结点的值（一个字符） */
-/* #表示空树，构造二叉链表表示二叉树T。 */
-void CreateBiTree(BiTree *T)
-{
-    TElemType ch;
-
-    /* scanf("%c",&ch); */
-    ch = str[treeIndex++];
-
-    if (ch == '#')
-        *T = NULL;
-    else
-    {
-        *T = (BiTree)malloc(sizeof(BiTNode));
-        if (!*T)
-            exit(OVERFLOW);
-        (*T)->data = ch;             /* 生成根结点 */
-        CreateBiTree(&(*T)->lchild); /* 构造左子树 */
-        CreateBiTree(&(*T)->rchild); /* 构造右子树 */
-    }
-}
-
-/* 初始条件: 二叉树T存在 */
-/* 操作结果: 若T为空二叉树,则返回TRUE,否则FALSE */
-Status BiTreeEmpty(BiTree T)
-{
-    if (T)
-        return FALSE;
-    else
-        return TRUE;
-}
-
-#define ClearBiTree DestroyBiTree
-
-/* 初始条件: 二叉树T存在。操作结果: 返回T的深度 */
-int BiTreeDepth(BiTree T)
-{
-    int i, j;
-    if (!T)
-        return 0;
-    if (T->lchild)
-        i = BiTreeDepth(T->lchild);
-    else
-        i = 0;
-    if (T->rchild)
-        j = BiTreeDepth(T->rchild);
-    else
-        j = 0;
-    return i > j ? i + 1 : j + 1;
-}
-
-/* 初始条件: 二叉树T存在。操作结果: 返回T的根 */
-TElemType Root(BiTree T)
-{
-    if (BiTreeEmpty(T))
-        return Nil;
-    else
-        return T->data;
-}
-
-/* 初始条件: 二叉树T存在，p指向T中某个结点 */
-/* 操作结果: 返回p所指结点的值 */
-TElemType Value(BiTree p)
-{
-    return p->data;
-}
-
-/* 给p所指结点赋值为value */
-void Assign(BiTree p, TElemType value)
-{
-    p->data = value;
-}
-
-/* 初始条件: 二叉树T存在 */
-/* 操作结果: 前序递归遍历T */
-void PreOrderTraverse(BiTree T)
-{
-    if (T == NULL)
-        return;
-    printf("%c", T->data);       /* 显示结点数据，可以更改为其它对结点操作 */
-    PreOrderTraverse(T->lchild); /* 再先序遍历左子树 */
-    PreOrderTraverse(T->rchild); /* 最后先序遍历右子树 */
-}
-
-/* 初始条件: 二叉树T存在 */
-/* 操作结果: 中序递归遍历T */
-void InOrderTraverse(BiTree T)
-{
-    if (T == NULL)
-        return;
-    InOrderTraverse(T->lchild); /* 中序遍历左子树 */
-    printf("%c", T->data);      /* 显示结点数据，可以更改为其它对结点操作 */
-    InOrderTraverse(T->rchild); /* 最后中序遍历右子树 */
-}
-
-/* 初始条件: 二叉树T存在 */
-/* 操作结果: 后序递归遍历T */
-void PostOrderTraverse(BiTree T)
-{
-    if (T == NULL)
-        return;
-    PostOrderTraverse(T->lchild); /* 先后序遍历左子树  */
-    PostOrderTraverse(T->rchild); /* 再后序遍历右子树  */
-    printf("%c", T->data);        /* 显示结点数据，可以更改为其它对结点操作 */
-}
+    char cd[MAX];
+    int start; //叶节点的Huffman code的起始位置
+} huffcode;
 
 int main()
 {
-    int i;
-    BiTree T;
-    TElemType e1;
-    InitBiTree(&T);
+    huffnode ht[2 * MAX];
+    huffcode hcd[MAX], d;
+    int i, k, f, l, r, n, c, m1, m2;
+    cout << "元素个数：";
+    cin >> n;
+    for (i = 1; i <= n; i++)
+    {
+        cout << "第" << i << "个元素=>\t节点值：";
+        cin >> ht[i].data;
+        cout << "\t\t权重：";
+        cin >> ht[i].weight;
+    }
 
-    StrAssign(str, "ABDH#K###E##CFI###G#J##");
+    //初始化Huffman叶节点和分支节点
+    //数组为静态存储空间，其最大的特征为 - 预先分配所需空间
+    for (i = 1; i <= 2 * n - 1; i++)
+    {
+        ht[i].parent = ht[i].left = ht[i].right = 0;
+    }
 
-    CreateBiTree(&T);
+    //构造哈夫曼树
+    for (i = n + 1; i <= 2 * n - 1; i++)
+    {
+        m1 = m2 = 32767; //m1 - 最小权值，m2 - 次小权值
+        l = r = 0;       //l - 最小权值节点的位置，r - 次小权值节点的位置
 
-    printf("构造空二叉树后,树空否？%d(1:是 0:否) 树的深度=%d\n", BiTreeEmpty(T), BiTreeDepth(T));
-    e1 = Root(T);
-    printf("二叉树的根为: %c\n", e1);
+        for (k = 1; k <= i - 1; k++)
+        {
+            if (ht[k].parent == 0)
+            {
+                if (ht[k].weight < m1)
+                {
+                    m2 = m1; //更新最小、次小权值并记录其所在位置
+                    r = l;
+                    m1 = ht[k].weight;
+                    l = k;
+                }
+                else if (ht[k].weight < m2)
+                {
+                    m2 = ht[k].weight;
+                    r = k;
+                }
+            }
+        }
+        //设置找到的2个子节点的父节点信息
+        ht[l].parent = i;
+        ht[r].parent = i;
+        ht[i].weight = ht[l].weight + ht[r].weight;
+        ht[i].left = l;
+        ht[i].right = r;
+    }
 
-    printf("\n前序遍历二叉树:");
-    PreOrderTraverse(T);
-    printf("\n中序遍历二叉树:");
-    InOrderTraverse(T);
-    printf("\n后序遍历二叉树:");
-    PostOrderTraverse(T);
-    ClearBiTree(&T);
-    printf("\n清除二叉树后,树空否？%d(1:是 0:否) 树的深度=%d\n", BiTreeEmpty(T), BiTreeDepth(T));
-    i = Root(T);
-    if (!i)
-        printf("树空，无根\n");
+    //根据Huffman树求Huffman编码
+    //注意：由于HuffmanCode的生成过程为自底向上，所以我们这里采用-倒着存方式
+    for (i = 1; i <= n; i++)
+    {
+        d.start = n + 1;  //start - 记录HuffmanCode的起始位置
+        c = i;            //当前叶节点在结构数组中的下标
+        f = ht[i].parent; //当前叶节点的父节点
+        while (f != 0)    //到达根节点则HuffmanCode建立完毕，循环退出
+        {
+            if (ht[f].left == c) //若当前叶节点的父节点的左指针指向了当前叶节点，则记录0 - 左儿子
+                d.cd[--d.start] = '0';
+            else //若当前叶节点的父节点的右指针指向了当前叶节点，则记录1 - 右儿子
+                d.cd[--d.start] = '1';
+            c = f;            //更新儿子节点(分支节点) - 自叶节点到根节点建立HuffmanCode
+            f = ht[f].parent; //更新当前儿子节点的父节点 直到根节点为止
+        }
+        hcd[i] = d;
+    }
+
+    //输出HuffmanCode
+    cout << "输出HuffmanCode：\n";
+    for (i = 1; i <= n; i++)
+    {
+        cout << "  " << ht[i].data << ": ";
+        for (k = hcd[i].start; k <= n; k++)
+            cout << hcd[i].cd[k];
+        cout << endl;
+    }
 
     return 0;
 }
+
+// a 7 b 9 c 12 d 22 e 23 f 27 
