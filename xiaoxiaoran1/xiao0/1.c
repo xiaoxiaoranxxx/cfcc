@@ -10,4 +10,4 @@ int main()
             printf("%dx%d=%d ", i, k, i * k);
         printf("\n");
     }
-}
+}  
