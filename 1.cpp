@@ -18,6 +18,14 @@ typedef struct
     int length;
 } SqList;
 
+void OutputList(SqList L)
+{
+    int i;
+    for (i = 1; i <= L.length; i++)
+        printf("%3d", L.r[i].key);
+    printf("\n");
+}
+
 //（1）创建随机数排序表
 void CreatList(SqList &L)
 {
@@ -26,12 +34,14 @@ void CreatList(SqList &L)
     {
         printf("  输入排序表长度(1-%d)==>", MAXNUM - 1);
         // 排序表0下标用作监视哨，实际容纳MAXNUM-1个元素
-        scanf("%d", &L.length);
+        // scanf("%d", &L.length);
+        L.length = 5;
     } while (L.length < 1 || L.length > MAXNUM - 1);
     srand((unsigned)time(NULL));
     for (i = 1; i <= L.length; i++) // 随机产生排序表
         L.r[i].key = 1 + rand() % (MAXNUM - 1);
 }
+
 // （2）直接插入排序
 void InsertSort(SqList &L, int &cp, int &mv)
 {
@@ -48,11 +58,13 @@ void InsertSort(SqList &L, int &cp, int &mv)
                 L.r[j + 1] = L.r[j];
                 cp++;
                 mv++;
+               
             }
             cp++;
             L.r[j + 1] = L.r[0];
             mv++;
         } //if
+        OutputList(L);
     }
 }
 // （3）折半插入排序
@@ -292,13 +304,6 @@ void MergeSort(SqList &L, SqList &temp, int s, int t, int &cp, int &mv)
 } // MergeSort
 
 //（10）输出排序表
-void OutputList(SqList L)
-{
-    int i;
-    for (i = 1; i <= L.length; i++)
-        printf("%3d", L.r[i].key);
-    printf("\n");
-}
 
 int main()
 {
@@ -318,60 +323,60 @@ int main()
     OutputList(L);
     printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
 
-    printf("(3)折半插入排序......\n");
-    L = LL;
-    cp = mv = 0;
-    BinSort(L, cp, mv);
-    printf("  排序结果：");
-    OutputList(L);
-    printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
+    // printf("(3)折半插入排序......\n");
+    // L = LL;
+    // cp = mv = 0;
+    // BinSort(L, cp, mv);
+    // printf("  排序结果：");
+    // OutputList(L);
+    // printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
 
-    printf("(4)希尔排序......\n");
-    L = LL;
-    cp = mv = 0;
-    ShellSort(L, cp, mv);
-    printf("  排序结果：");
-    OutputList(L);
-    printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
+    // printf("(4)希尔排序......\n");
+    // L = LL;
+    // cp = mv = 0;
+    // ShellSort(L, cp, mv);
+    // printf("  排序结果：");
+    // OutputList(L);
+    // printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
 
-    printf("(5)冒泡排序......\n");
-    L = LL;
-    cp = mv = 0;
-    BubbleSort(L, cp, mv);
-    printf("  排序结果：");
-    OutputList(L);
-    printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
-    getchar();
+    // printf("(5)冒泡排序......\n");
+    // L = LL;
+    // cp = mv = 0;
+    // BubbleSort(L, cp, mv);
+    // printf("  排序结果：");
+    // OutputList(L);
+    // printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
+    // getchar();
 
-    printf("(6)快速排序......\n");
-    L = LL;
-    cp = mv = 0;
-    QSort(L, 1, L.length, cp, mv);
-    printf("  排序结果：");
-    OutputList(L);
-    printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
+    // printf("(6)快速排序......\n");
+    // L = LL;
+    // cp = mv = 0;
+    // QSort(L, 1, L.length, cp, mv);
+    // printf("  排序结果：");
+    // OutputList(L);
+    // printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
 
-    printf("(7)简单选择排序......\n");
-    L = LL;
-    cp = mv = 0;
-    SelectSort(L, cp, mv);
-    printf("  排序结果：");
-    OutputList(L);
-    printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
+    // printf("(7)简单选择排序......\n");
+    // L = LL;
+    // cp = mv = 0;
+    // SelectSort(L, cp, mv);
+    // printf("  排序结果：");
+    // OutputList(L);
+    // printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
 
-    printf("(8)堆排序......\n");
-    L = LL;
-    cp = mv = 0;
-    HeapSort(L, cp, mv);
-    printf("  排序结果：");
-    OutputList(L);
-    printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
+    // printf("(8)堆排序......\n");
+    // L = LL;
+    // cp = mv = 0;
+    // HeapSort(L, cp, mv);
+    // printf("  排序结果：");
+    // OutputList(L);
+    // printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
 
-    printf("(9)二路归并排序......\n");
-    L = LL;
-    cp = mv = 0;
-    MergeSort(L, temp, 1, L.length, cp, mv);
-    printf("  排序结果：");
-    OutputList(L);
-    printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
+    // printf("(9)二路归并排序......\n");
+    // L = LL;
+    // cp = mv = 0;
+    // MergeSort(L, temp, 1, L.length, cp, mv);
+    // printf("  排序结果：");
+    // OutputList(L);
+    // printf("  排序效率：比较次数%d，移动次数%d。\n", cp, mv);
 }
