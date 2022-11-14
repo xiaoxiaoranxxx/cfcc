@@ -7,7 +7,7 @@ int main()
     {
         k = i;
         for (j = 1; j <= 10 - i; j++, k++)
-            printf("%dx%d=%d ", i, k, i * k);
+            printf("%dx%d=%d\t", i, k, i * k);
         printf("\n");
     }
 }  

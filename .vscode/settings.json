@@ -2,5 +2,10 @@
     "code-runner.executorMap": {
          "c": "cls;cd $dir && gcc -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
          "cpp": "cls;cd $dir && g++ -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    },
+    "files.associations": {
+        "*.php": "php",
+        "*.html": "html",
+        "stdio.h": "c"
     }
 }
